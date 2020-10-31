@@ -15,7 +15,8 @@
 4. Create a Github Account if you haven't already!
 ---
 ### Contributing to Django
-1. Once all of the requirements have successfully been installed open up the command line of your choice,
+1. Once all of the requirements have successfully been installed login to github and fork the django project by
+clicking [here](https://github.com/django/django/fork) then open up your command line.
 You may use Powershell or Cmd on windows (powershell is highly recommended), or the Terminal on Mac. Once you're in the command line enter the
 following command into the terminal to download the development version of the Django framework to your machine:
 ```
