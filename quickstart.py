@@ -2,16 +2,34 @@ import os
 
 
 github_username = input("Please enter your github username: ")
-cm1 = "git clone https://github.com/" + github_username + "/django.git"
+
+grabDjango = "git clone https://github.com/" + github_username + "/django.git"
+
 print("Attempting to clone django project to your local machine")
-res1 = os.system(cm1)
-cm2 = "cd django/"
+gotDjango = os.system(grabDjango)
+
+navigateToDjango = "cd django/"
 print("Attempting to navigate to Django folder")
-res2 = os.system(cm2)
-cm3 = "python3 -m venv ~/.virtualenvs/djangodev"
-cm4 = "source ~/.virtualenvs/djangodev/bin/activate"
+inDjango = os.system(navigateToDjango)
+
+print("Attempting to set virtual env")
+setVirtEnv = "python3 -m venv ~/.virtualenvs/djangodev"
+setEnv = os.system(setVirtEnv)
+
+print("Attempting to activate virtual env")
+activateVirtEnv = "source ~/.virtualenvs/djangodev/bin/activate"
+activatedEnv = os.system(activateVirtEnv)
+
 cwd = os.getcwd()
-cm5 = "python -m pip install -e" + cwd + "/django"
-cm6 = "python -m pip install -r requirements/py3.txt "
-cm7 = "python runtests.py"
-print(cm5)
+
+print("Attempting to install django and dependencies")
+installRightHere = "python -m pip install -e" + cwd + "/django"
+installed = os.system(installRightHere)
+
+grabDependencies = "python -m pip install -r requirements/py3.txt "
+gotDependencies = os.system(grabDependencies)
+
+print("Attempting to run tests")
+runTests = "./runtests.py"
+ranTests = os.system(runTests)
+
