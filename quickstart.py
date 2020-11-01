@@ -68,7 +68,7 @@ def runUni(djangoCommand):
 
 def main():
     github_username = input("please enter your github username: ")
-    grabDjango = "git clone https://github.com/" + github_username + "/django.git"
+    grabDjango = "git clone --depth 1 https://github.com/" + github_username + "/django.git"
     if os.name == 'nt':
         runWin(grabDjango)
     else:
