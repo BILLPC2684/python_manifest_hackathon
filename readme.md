@@ -50,7 +50,7 @@ python -m pip install -r requirements/py3.txt
 7. Congratulations you are ready to dive into Django and get started!
 ---
 ### Quickstart
-1. In a hurry? Download the python interpreter and git-scm from their main sites.
+1. In a hurry? Download the python interpreter and git-scm from their main sites and fork the django project by clicking [here](https://github.com/django/django/fork).
 2. Create a github account if you haven't already
 3. Download this repository by typing the following in the command line:
 ```
